@@ -1,0 +1,92 @@
+<h3 class="text-success text-center mt-4">Update Employee Details</h3>
+
+<div class="container w-75 shadow p-4 mt-3 rounded bg-light">
+  <form>
+
+    <!-- Section 1: Basic Information -->
+    <div class="mb-4">
+      <h5 class="text-primary">Basic Information</h5>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="id" class="form-label">Employee ID</label>
+          <input type="text" [(ngModel)]="employee.id" class="form-control" name="id" id="id" readonly>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="employeeName" class="form-label">Employee Name</label>
+          <input type="text" [(ngModel)]="employee.employeeName" class="form-control" name="employeeName" id="employeeName">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="employeeEmail" class="form-label">Employee Email</label>
+          <input type="email" [(ngModel)]="employee.employeeEmail" class="form-control" name="employeeEmail" id="employeeEmail">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="employeePhone" class="form-label">Employee Phone</label>
+          <input type="text" [(ngModel)]="employee.employeePhone" class="form-control" name="employeePhone" id="employeePhone">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Additional Details -->
+    <div class="mb-4">
+      <h5 class="text-primary">Additional Details</h5>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <label for="employeeGender" class="form-label">Gender</label>
+          <input type="text" [(ngModel)]="employee.employeeGender" class="form-control" name="employeeGender" id="employeeGender">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="employeeSalary" class="form-label">Salary</label>
+          <input type="text" [(ngModel)]="employee.employeeSalary" class="form-control" name="employeeSalary" id="employeeSalary">
+        </div>
+        <div class="col-md-4 mb-3">
+          <label for="employeeRole" class="form-label">Role</label>
+          <input type="text" [(ngModel)]="employee.employeeRole" class="form-control" name="employeeRole" id="employeeRole">
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button class="btn btn-success px-4" (click)="updateEmployee()">Update Employee</button>
+    </div>
+
+  </form>
+</div>
+
+
+
+<footer class="custom-footer mt-5">
+  <div class="container py-4">
+    <div class="row text-white">
+      <!-- About Section -->
+      <div class="col-md-4 mb-3">
+        <h5>About Project</h5>
+        <p>This Employee Management System allows users to perform full CRUD operations with a responsive frontend built using Angular and a Java backend.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/employeelist']">All Employees</a></li>
+          <li><a [routerLink]="['/addemployee']">Add Employee</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p>Email: contactems.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Batch: #907 - HTML/CSS 9AM</p>
+      </div>
+    </div>
+
+    <hr class="bg-light" />
+
+    <div class="text-center text-light small">
+      © 2025 Employee Management System | All Right Reserve
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,114 @@
+/* ========== Form Container Styling ========== */
+.container.form-container {
+  background: #f9f9f9;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.15);
+  margin-bottom: 40px;
+}
+
+/* ========== Headings ========== */
+h3 {
+  font-weight: bold;
+  text-shadow: 1px 1px #e0e0e0;
+}
+
+/* ========== Input Labels ========== */
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* ========== Form Inputs ========== */
+input.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus Effect for Inputs */
+input.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);
+}
+
+/* ========== Submit Button ========== */
+button.btn-success {
+  padding: 8px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn-success:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+/* ========== Responsive Form Width ========== */
+@media (max-width: 768px) {
+  .container.w-50,
+  .container.form-container {
+    width: 90% !important;
+  }
+}
+
+/* ========== Section Titles (h5) ========== */
+h5.section-title {
+  font-weight: 600;
+  border-left: 4px solid #198754;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* ========== Optional Light Background Section ========== */
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
+/* ========== Footer Styling ========== */
+.custom-footer {
+  background: linear-gradient(to right, #0d6efd, #198754);
+  color: #fff;
+  font-size: 15px;
+}
+
+.custom-footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.custom-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.custom-footer ul li {
+  margin-bottom: 8px;
+}
+
+.custom-footer ul li a {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer ul li a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.custom-footer p {
+  margin-bottom: 6px;
+}
+
+/* Responsive Footer Text Alignment */
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
+  }
+}

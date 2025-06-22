@@ -1,0 +1,137 @@
+/* Center the table container */
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Table header styling */
+table thead th {
+  background-color: #198754; /* Bootstrap success green */
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Row hover effect */
+table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Table border and spacing */
+table {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Button spacing */
+table .btn {
+  margin: 2px;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  table thead {
+    display: none;
+  }
+
+  table, table tbody, table tr, table td {
+    display: block;
+    width: 100%;
+  }
+
+  table tr {
+    margin-bottom: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 45%;
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+
+.footer {
+  background: linear-gradient(to right, #0d6efd, #198754);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  color: white;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+
+.custom-footer {
+  background: linear-gradient(to right, #0d6efd, #198754);
+  color: #fff;
+  font-size: 15px;
+}
+
+.custom-footer h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.custom-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.custom-footer ul li {
+  margin-bottom: 8px;
+}
+
+.custom-footer ul li a {
+  color: #ffffffcc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer ul li a:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+
+.custom-footer p {
+  margin-bottom: 6px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
+  }
+}

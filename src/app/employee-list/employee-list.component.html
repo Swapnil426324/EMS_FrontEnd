@@ -1,0 +1,77 @@
+<div class="container mt-4">
+  <h2 class="text-success text-center mb-4">All Employee List</h2>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Emp-ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Gender</th>
+          <th>Salary</th>
+          <th>Role</th>
+          <th colspan="3">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let i of employee">
+          <td>{{ i.id }}</td>
+          <td>{{ i.employeeName }}</td>
+          <td>{{ i.employeeEmail }}</td>
+          <td>{{ i.employeePhone }}</td>
+          <td>{{ i.employeeGender }}</td>
+          <td>₹{{ i.employeeSalary }}</td>
+          <td>{{ i.employeeRole }}</td>
+          <td>
+            <a class="btn btn-success btn-sm" [routerLink]="['/editemployee', i.id]">Edit</a>
+          </td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="deleteEmployee(i.id)">Delete</button>
+          </td>
+          <td>
+            <a class="btn btn-info btn-sm" [routerLink]="['/viewemployee', i.id]">View</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<footer class="custom-footer mt-5">
+  <div class="container py-4">
+    <div class="row text-white">
+      <!-- About Section -->
+      <div class="col-md-4 mb-3">
+        <h5>About Project</h5>
+        <p>This Employee Management System allows users to perform full CRUD operations with a responsive frontend built using Angular and a Java backend.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a [routerLink]="['/home']">Home</a></li>
+          <li><a [routerLink]="['/employeelist']">All Employees</a></li>
+          <li><a [routerLink]="['/addemployee']">Add Employee</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact</h5>
+        <p>Email: contactems.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Batch: #907 - HTML/CSS 9AM</p>
+      </div>
+    </div>
+
+    <hr class="bg-light" />
+
+    <div class="text-center text-light small">
+      © 2025 Employee Management System | All Right Reserve
+    </div>
+  </div>
+</footer>
