@@ -4,7 +4,12 @@
   padding: 10px 20px;
   transition: all 0.3s ease-in-out;
   border-bottom: 2px solid #ddd;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
+
 
 /* Brand styling */
 .navbar-brand {

@@ -9,7 +9,7 @@ export class EmployeeserviceService {
 
   constructor(private http:HttpClient) { }
  
-  private apiUrl = 'http://localhost:8080/employee';
+  private apiUrl = 'http://localhost:8081/employee';
 
    getEmployee() {
     return this.http.get<Employee[]>(this.apiUrl);
